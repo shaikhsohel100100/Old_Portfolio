@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Portfolio</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="icon" href="images/fav.webp">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgba(0, 0, 0, 0.500);
+            overflow: hidden;
+        }
+
+        .navbar {
+            width: 100vw;
+            height: 50px;
+            margin-top: 15px;
+            /* background-color: red; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navbar ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: black;
+            letter-spacing: 8px;
+            font-size: 20px;
+        }
+
+        .navbar ul li a:hover {
+            color: brown;
+        }
+
+        .navbar ul li {
+            margin-right: 75px;
+        }
+
+        .outer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .session{
+        width: 1200px;
+        height: 350px;
+        margin-top: 180px;
+        background-color: brown;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 15px;
+        box-shadow: 2px 8px 10px black;
+        }
+
+        h2{
+            margin-bottom: 50px;
+            letter-spacing: 8px;
+        }
+        .social{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .social a{
+            padding: 25px;
+            color: whitesmoke;
+        }
+        .social a:hover{
+            color: black;
+        }
+        .social ion-icon{
+            font-size: 50px;
+        }
+
+        @media(max-width: 1500px)
+        {
+            .session{
+                width: 600px;
+                height: 180px;
+            }
+            .session h2{
+                font-size: 16px;
+            }
+            .social ion-icon {
+                font-size: 20px;
+            }
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="hire_me.html">HIRE ME</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+
+        <div class="outer">
+
+        <div class="session">
+            <h2>CONTACT ME!</h2>
+            <div class="social">
+            <a href="#">
+                <ion-icon name="Logo-facebook"></ion-icon>
+            </a>
+            <a href="#">
+                <ion-icon name="Logo-instagram"></ion-icon>
+            </a>
+            <a href="#">
+                <ion-icon name="Logo-twitter"></ion-icon>
+            </a>
+            <a href="#">
+                <ion-icon name="Logo-skype"></ion-icon>
+            </a>
+            <a href="#">
+                <ion-icon name="Logo-google"></ion-icon>
+            </a>
+        </div>
+    </div>
+
+    </div>
+
+    </div>
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+
+</html>

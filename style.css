@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.500);
+    overflow: hidden;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.icon {
+    cursor: pointer;
+}
+
+.icon div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 5px;
+    background-color: black;
+    margin: 5px;
+    display: none;
+    cursor: pointer;
+
+}
+
+nav {
+    width: 100vw;
+    height: 50px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    letter-spacing: 8px;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    color: brown;
+}
+
+nav ul li {
+    margin-right: 75px;
+    display: inline-block;
+}
+
+
+.content {
+    margin: 150px;
+    margin-top: 250px;
+    display: flex;
+}
+
+.content .head {
+    margin-bottom: 15px;
+    font-size: 35px;
+}
+
+.head span {
+    color: brown;
+}
+
+.para {
+    line-height: 30px;
+    letter-spacing: 2.5px;
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+
+.btn {
+    margin: 15px;
+    margin-top: 30px;
+}
+
+.btn a {
+    text-decoration: none;
+    color: brown;
+    background-color: black;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.right-content img {
+    position: absolute;
+    /* margin-left: 350px; */
+}
+
+.img1 {
+    margin-top: 80px;
+    width: 1100px;
+    margin-left: 300px;
+    transform: translateY(0%);
+    transition: .5s ease-in-out;
+}
+
+.right-content:hover .img1 {
+    transform: translateY(-10%);
+}
+
+.img2 {
+    width: 600px;
+    margin-left: 500px;
+    transform: translateX(0%);
+    bottom: 0px;
+    transition: .5s ease-in-out;
+}
+
+.right-content:hover .img2 {
+    transform: translateX(-10%);
+}
+
+@media (max-width:1600px) {
+    .right-content {
+        margin-right: 1000px;
+    }
+
+    .right-content .img2 {
+        width: 450px;
+    }
+
+    .right-content .img1 {
+        width: 800px;
+        transform: translateY(-5%);
+    }
+
+    .left-content h2 {
+        font-size: 30px;
+    }
+
+    .left-content p {
+        font-size: 15px;
+    }
+
+    .left-content a {
+        font-size: 20px;
+    }
+    .btn a{
+        font-size: 10px;
+    }
+}

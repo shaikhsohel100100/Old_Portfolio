@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Portfolio</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="icon" href="images/fav.webp">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgba(0, 0, 0, 0.500);
+            overflow: hidden;
+        }
+
+        .navbar {
+            width: 100vw;
+            height: 50px;
+            margin-top: 15px;
+            /* background-color: red; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navbar ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: black;
+            letter-spacing: 8px;
+            font-size: 20px;
+        }
+
+        .navbar ul li a:hover {
+            color: brown;
+        }
+
+        .navbar ul li {
+            margin-right: 75px;
+        }
+
+        .tem{
+            width: screen;
+            height: 100vh;
+            /* background-color: red; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .about{
+            width: 250px;
+            height: 80px;
+            margin-bottom: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: brown;
+            border-radius: 10px;
+        }
+        .left{
+            margin-right: 50px;
+        }
+        .left p, strong{
+            font-size: 20px;
+        }
+        p{
+            margin-bottom: 20px;
+        }
+        .right{
+            margin-left: 50px;
+        }
+        .right img{
+            width: 400px;
+            transition: .5s ease-in-out;
+        }
+        .right img:hover{
+            box-shadow: 5px 5px 15px rgba(165, 42, 42, 0.305);
+            /* margin-top: 20px; */
+        }
+
+        @media (max-width: 1500px)
+        {
+            .left .about{
+                width: 150px;
+                height: 50px;
+            }
+            .left h1{
+                font-size: 20px;
+            }
+            .left p{
+                font-size: 16px;
+            }
+            .left strong{
+                font-size: 13px;
+            }
+            .right img{
+                width: 250px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="hire_me.html">HIRE ME</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+
+        <div class="tem">
+
+            <div class="left">
+                <div class="about">
+                    <h1>ABOUT ME</h1>
+                </div>
+                <p>Heyy there, My name is Sohel Shaikh<br> I am student of deogiri institute of technology and management studies(DITMS)</p>
+                <strong> Currently, I am purcuing BCS(3rd year) from DITMS,<br> and want to become a good FullStck Developer and work with MNCs companies<br> and gain the actual work experience..  </strong>
+            </div>
+            <div class="right">
+                <img src="images/pic.JPG" alt="error">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
